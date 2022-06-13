@@ -1,0 +1,307 @@
+/* page/homepage/homepage.wxss */
+/*************************************** start **************************
+网络图片地址：
+https://s1.ax1x.com/2022/05/05/OZ3GL9.jpg 葡萄
+https://s1.ax1x.com/2022/05/05/OZ3dJK.jpg 樱桃
+https://s1.ax1x.com/2022/05/06/OnDVMj.png 方形海报
+https://s1.ax1x.com/2022/05/06/OnDud0.png 16:9 海报
+https://s1.ax1x.com/2022/05/06/OnojNF.png 生活服务图片
+*****/
+
+/***************************************上幅 start*******************************/
+.head_container{
+    height: 680rpx;
+    width: auto;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    -moz-background-size:100% 100%;
+    background-image: url("https://s1.ax1x.com/2022/06/07/XDMXcT.jpg");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .icon_calender{/*天气 日历的 css*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:60rpx;
+    height:60rpx;
+    margin-left: 20rpx;
+  }
+  
+  /*************************************嵌套样式：个人中心 账号*************************************/
+  
+  .block_container{
+    display: flex;
+    position: absolute;
+    top: 605rpx;
+    align-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    flex-direction:row;
+    height: 100rpx;
+    width: 680rpx;
+    background: rgba(191, 242, 255, 0.5);
+    align-items:center;
+    justify-content:center;
+    border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  }
+  .block_container_icon{
+  
+    width: 100rpx;
+    height:95rpx;
+  
+  
+  }
+  .block_container_text{
+    display: flex;
+    flex-direction:row-reverse;
+    width: 500rpx;
+    height:25rpx;
+  }
+  .self_infor_container{
+    position: absolute;
+    top: 680rpx;
+    align-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    flex-direction:row;
+    height: 120rpx;
+    width: 680rpx;
+    background: rgba(191, 242, 255, 0.5);
+  align-items: center;
+  display: flex;
+  
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  }
+  .self_headimage{
+    float: left;
+    margin-left: 75rpx;
+    margin-right: 30rpx;
+    width: 80rpx;
+    height:80rpx;
+    border-radius: 50%;
+  }
+  
+  
+  .button1 {
+  
+    border-radius: 50rpx;
+    color:rgb(30, 198, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+    font-size: medium;
+   font-weight: 500;
+    width: 30%;
+    background-size: 20px 20px;
+    background-color: #95f8f350;
+  }
+  .button1::after{
+    border: none;
+  }
+  /*------------------------------嵌套样式：个人中心 区块链账号 end -------------*/
+  /*------------------------------------------------------上幅 end-------------------------------------------------*/
+  
+  
+  /***************************************页面中间6个功能布局 start*******************************/
+  /* 6大功能的排列方式*/
+  .home_container{
+    display: flex;
+    flex-direction:row;
+    align-items: right;
+    flex-wrap:  wrap ;
+    margin-bottom: auto;
+    flex-wrap: wrap;
+    background-repeat:no-repeat;
+     background-size:100% 100%;
+     -moz-background-size:100% 100%;
+     margin-left: 10%;
+     margin-right: 10%;
+  }
+  /*控制 图片+文字盒子的 大小*/
+  .home_function{
+    width:80rpx;
+    height:80rpx;
+    margin-top: 30rpx;
+    margin-bottom: 20rpx;
+    display: flex;
+    flex-direction: column;
+  }
+  .whitepanel{
+    margin-top: 200rpx;
+  }
+  /*让图片在上 文字在下*/
+  .icon_inside_1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 140rpx;
+  }
+  .icon_inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  margin-bottom: 50rpx;
+  }
+  /*------------------------------------------页面中间6个功能布局 end-----------------------------------*/
+  
+  
+  /************************************横幅 swiper布局 start************************************/
+  .banner{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 200rpx;
+    border-top-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+  }
+  .banner image{
+    width: 100%;
+    height: 200rpx;
+  
+    border-bottom-left-radius: 30rpx;
+    border-bottom-right-radius: 30rpx;
+  }
+  /*------------------------------------------横幅 布局 end ------------------------------------------------*/
+  
+  /***********************************line边界线 start **************************************/
+  .line_container_up{
+    display: flex;
+    flex-direction:row;
+    height:5rpx;
+    border: 1px solid #dededf;
+    width:auto;
+    height: 180rpx;
+    border-radius: 5px;
+    text-align:center;
+    margin-left: 40rpx;
+    margin-right: 40rpx;
+    align-items: center;
+  }
+  .line_container_down{
+    display: flex;
+    flex-direction:row;
+    border: 1px solid #a4d897;
+    width:auto;
+    height: 180rpx;
+    margin-left: 39rpx;
+    margin-right: 39rpx;
+    align-items: center;
+    border-bottom-left-radius: 30rpx;
+    border-bottom-right-radius: 30rpx;
+  }
+  /*------------------------------------------line边界线 end------------------------------------------------*/
+  /************************************ App start************************************/
+  
+  .jump_app{
+    display: flex;
+    flex-direction:row;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height:200rpx;
+    border-top-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+  }
+  /*------------------------------------------app end ------------------------------------------------*/
+  
+  /*页面的配置*/
+  page{
+    background-color:#FFFAFA;
+  }
+  
+  
+  .cardTitle {
+    color: #fff;
+    padding: 90rpx 60rpx;
+    font-size: 35rpx;
+    font-weight: 450;
+    transform: skew(-10deg, 0deg);
+    position: relative;
+    text-shadow: 0px 0px 6rpx rgba(0, 0, 0, 0.3)
+  }
+  
+  .cardTitle::before {
+    content: "";
+    position: absolute;
+    width: 60rpx;
+    height: 6rpx;
+    border-radius: 20rpx;
+    background-color: #fff;
+    display: block;
+    top: 60rpx;
+    left: 50rpx;
+    transform: skew(10deg, 0deg);
+  }
+  
+  .cardTitle::after {
+    content: "";
+    position: absolute;
+    width: 140rpx;
+    border-radius: 6rpx;
+    height: 24rpx;
+    background-color: #fff;
+    display: block;
+    bottom: 76rpx;
+    left: 90rpx;
+    transform: skew(10deg, 0deg);
+    opacity: 0.1;
+  }
+  
+  .lay_row_cen{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .lay_row_spa{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  height: 65%;
+  }
+  .lay_row_sta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .lay_row_end{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .lay_col_cen{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .lay_col_sta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .lay_col_spa{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }

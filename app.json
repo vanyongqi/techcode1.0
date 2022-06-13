@@ -1,0 +1,18 @@
+{ "pages": [
+
+  "page/homepage/homepage",
+  "page/headswiper/head",
+  "page/topic/topic",
+  "page/tailswiper/tail",
+
+  "page/headswiper/news/news",
+  "page/topic/computer_archtecture/computer_archtecture",
+  "page/topic/computer_network/computer_nework",
+  "page/topic/operating_system/operating_system",
+  "page/topic/block_chain/blockchain",
+  "page/topic/artificial_intelligence/artificial_intelligence",
+  "page/topic/structure_algorithm/structure_algorithm",
+  "page/topic/language_eight_templates/language_eight_templates",
+  "page/tailswiper/chat_rooms/chat_rooms",
+  "page/tailswiper/project_deployed/project_deployed"
+]}
