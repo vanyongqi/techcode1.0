@@ -1,4 +1,4 @@
-// page/headswiper/news/news.js
+// page/topic/english/english.js
 Page({
 
   /**

@@ -1,12 +1,4 @@
 /* page/homepage/homepage.wxss */
-/*************************************** start **************************
-网络图片地址：
-https://s1.ax1x.com/2022/05/05/OZ3GL9.jpg 葡萄
-https://s1.ax1x.com/2022/05/05/OZ3dJK.jpg 樱桃
-https://s1.ax1x.com/2022/05/06/OnDVMj.png 方形海报
-https://s1.ax1x.com/2022/05/06/OnDud0.png 16:9 海报
-https://s1.ax1x.com/2022/05/06/OnojNF.png 生活服务图片
-*****/
 
 /***************************************上幅 start*******************************/
 .head_container{
@@ -15,100 +7,14 @@ https://s1.ax1x.com/2022/05/06/OnojNF.png 生活服务图片
     background-repeat:no-repeat;
     background-size:100% 100%;
     -moz-background-size:100% 100%;
-    background-image: url("https://s1.ax1x.com/2022/06/07/XDMXcT.jpg");
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   
-  .icon_calender{/*天气 日历的 css*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width:60rpx;
-    height:60rpx;
-    margin-left: 20rpx;
-  }
-  
-  /*************************************嵌套样式：个人中心 账号*************************************/
-  
-  .block_container{
-    display: flex;
-    position: absolute;
-    top: 605rpx;
-    align-content: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    flex-direction:row;
-    height: 100rpx;
-    width: 680rpx;
-    background: rgba(191, 242, 255, 0.5);
-    align-items:center;
-    justify-content:center;
-    border-top-left-radius: 15rpx;
-  border-top-right-radius: 15rpx;
-  }
-  .block_container_icon{
-  
-    width: 100rpx;
-    height:95rpx;
-  
-  
-  }
-  .block_container_text{
-    display: flex;
-    flex-direction:row-reverse;
-    width: 500rpx;
-    height:25rpx;
-  }
-  .self_infor_container{
-    position: absolute;
-    top: 680rpx;
-    align-content: center;
-    margin-right: 5%;
-    margin-left: 5%;
-    flex-direction:row;
-    height: 120rpx;
-    width: 680rpx;
-    background: rgba(191, 242, 255, 0.5);
-  align-items: center;
-  display: flex;
-  
-  border-bottom-left-radius: 30rpx;
-  border-bottom-right-radius: 30rpx;
-  }
-  .self_headimage{
-    float: left;
-    margin-left: 75rpx;
-    margin-right: 30rpx;
-    width: 80rpx;
-    height:80rpx;
-    border-radius: 50%;
-  }
-  
-  
-  .button1 {
-  
-    border-radius: 50rpx;
-    color:rgb(30, 198, 204);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 55%;
-    font-size: medium;
-   font-weight: 500;
-    width: 30%;
-    background-size: 20px 20px;
-    background-color: #95f8f350;
-  }
-  .button1::after{
-    border: none;
-  }
-  /*------------------------------嵌套样式：个人中心 区块链账号 end -------------*/
-  /*------------------------------------------------------上幅 end-------------------------------------------------*/
-  
-  
-  /***************************************页面中间6个功能布局 start*******************************/
+
+  /**************************************页面中间6个功能布局 start*******************************/
   /* 6大功能的排列方式*/
   .home_container{
     display: flex;
@@ -124,7 +30,7 @@ https://s1.ax1x.com/2022/05/06/OnojNF.png 生活服务图片
      margin-right: 10%;
   }
   /*控制 图片+文字盒子的 大小*/
-  .home_function{
+  .icon_style{
     width:80rpx;
     height:80rpx;
     margin-top: 30rpx;
@@ -132,76 +38,20 @@ https://s1.ax1x.com/2022/05/06/OnojNF.png 生活服务图片
     display: flex;
     flex-direction: column;
   }
-  .whitepanel{
-    margin-top: 200rpx;
-  }
+
   /*让图片在上 文字在下*/
-  .icon_inside_1{
+  .moudle_style{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 140rpx;
+    margin-top: 10rpx;
   }
-  .icon_inside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  margin-bottom: 50rpx;
-  }
-  /*------------------------------------------页面中间6个功能布局 end-----------------------------------*/
-  
-  
-  /************************************横幅 swiper布局 start************************************/
-  .banner{
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 200rpx;
-    border-top-left-radius: 30rpx;
-    border-top-right-radius: 30rpx;
-  }
-  .banner image{
-    width: 100%;
-    height: 200rpx;
-  
-    border-bottom-left-radius: 30rpx;
-    border-bottom-right-radius: 30rpx;
-  }
-  /*------------------------------------------横幅 布局 end ------------------------------------------------*/
-  
-  /***********************************line边界线 start **************************************/
-  .line_container_up{
-    display: flex;
-    flex-direction:row;
-    height:5rpx;
-    border: 1px solid #dededf;
-    width:auto;
-    height: 180rpx;
-    border-radius: 5px;
-    text-align:center;
-    margin-left: 40rpx;
-    margin-right: 40rpx;
-    align-items: center;
-  }
-  .line_container_down{
-    display: flex;
-    flex-direction:row;
-    border: 1px solid #a4d897;
-    width:auto;
-    height: 180rpx;
-    margin-left: 39rpx;
-    margin-right: 39rpx;
-    align-items: center;
-    border-bottom-left-radius: 30rpx;
-    border-bottom-right-radius: 30rpx;
-  }
-  /*------------------------------------------line边界线 end------------------------------------------------*/
-  /************************************ App start************************************/
-  
-  .jump_app{
+
+  /************************************横幅  start************************************/
+
+  .utilities{
     display: flex;
     flex-direction:row;
     width: 90%;
@@ -211,97 +61,242 @@ https://s1.ax1x.com/2022/05/06/OnojNF.png 生活服务图片
     border-top-left-radius: 30rpx;
     border-top-right-radius: 30rpx;
   }
-  /*------------------------------------------app end ------------------------------------------------*/
-  
-  /*页面的配置*/
-  page{
-    background-color:#FFFAFA;
+
+
+  .project{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 200rpx;
+    border-top-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
   }
-  
-  
-  .cardTitle {
-    color: #fff;
-    padding: 90rpx 60rpx;
-    font-size: 35rpx;
-    font-weight: 450;
-    transform: skew(-10deg, 0deg);
-    position: relative;
-    text-shadow: 0px 0px 6rpx rgba(0, 0, 0, 0.3)
-  }
-  
-  .cardTitle::before {
-    content: "";
-    position: absolute;
-    width: 60rpx;
-    height: 6rpx;
-    border-radius: 20rpx;
-    background-color: #fff;
-    display: block;
-    top: 60rpx;
-    left: 50rpx;
-    transform: skew(10deg, 0deg);
-  }
-  
-  .cardTitle::after {
-    content: "";
-    position: absolute;
-    width: 140rpx;
-    border-radius: 6rpx;
-    height: 24rpx;
-    background-color: #fff;
-    display: block;
-    bottom: 76rpx;
-    left: 90rpx;
-    transform: skew(10deg, 0deg);
-    opacity: 0.1;
-  }
-  
-  .lay_row_cen{
+  .project image{
     width: 100%;
+    height: 200rpx;
+  
+    border-bottom-left-radius: 30rpx;
+    border-bottom-right-radius: 30rpx;
+  }
+
+  .middle {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    transform: translate3d(0, 100%, 0);
+    /* padding-bottom: 450rpx; */
+    opacity: 0;
+    animation: rise 3s cubic-bezier(0.19, 1, 0.22, 1) .25s forwards;
   }
-  .lay_row_spa{
-    width: 100%;
+  
+  .middle_box {
+    width: 48%;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+    height: 200rpx;
+    background: yellowgreen;
+    border-radius: 16rpx;
     display: flex;
     flex-direction: row;
-    align-items: center;
-  height: 65%;
-  }
-  .lay_row_sta{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .lay_row_end{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .lay_col_cen{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .lay_col_sta{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .lay_col_spa{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
   }
+  
+  .box_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /**子view垂直居中*/
+    vertical-align: center;
+    /**垂直居中*/
+    justify-content: center;
+    /**内容居中*/
+  }
+  
+  .box_righttop {
+    padding-top: 40rpx;
+    padding-left: 30rpx;
+    width: 100%;
+    height: 100rpx;
+    font-size: 30rpx;
+  }
+  
+  .box_rightlow {
+    width: 110%;
+    height: 100rpx;
+    padding-top: 00rpx;
+    padding-left: 40rpx;
+  }
+  
+  .box_left {
+    width: 50%;
+  }
+  
+  .box_img {
+    margin-top: 50rpx;
+    margin-left: 20rpx;
+    width: 120rpx;
+    height: 120rpx;
+  }
+  
+  .bg-orange {
+    background: #fde6d2;
+    color: #f37b1d;
+  }
+  
+  .bg-cyan {
+    background-color: #d2f1f0;
+    color: #1cbbb4;
+  }
+  
+  .bg-red {
+    background-color: #fadbd9;
+    color: #e54d42;
+  }
+  
+  .bg-purple {
+    background-color: #e1d7f0;
+    color: #6739b6;
+  }
+  .bg-azure {
+    background-color: #4fe0e0;
+    color: 	#116161;
+  }
+  .bg-ivory {
+    background-color: #e4e4aa;
+    color: 	#8f8f1e;
+  }
+  .bg-sliver {
+    background-color: #C0C0C0;
+    color: 	#5e5c5c;
+  }
+  .bg-mistyrose {
+    background-color: #FFE4E1;
+    color: 	#d19089;
+  }
+  .bg-gold{
+    background-color: #f7e270;
+    color: 	#b19600;
+  }
+  .bg-cornflowerblue {
+    background-color: 	#7aa5f7;
+    color: 		#3a64b3;
+  }
+  @keyframes rise {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0rpx, 0);
+    }
+  }
+  /*页面的配置*/
+  page{
+    background-color:#ffffffc9;
+    background-image: url(https://r1.ilikewallpaper.net/iphone-wallpapers/download/98131/The-Wave-iphone-wallpaper-ilikewallpaper_com.jpg);
+  }
+  
+  
+ 
+
+/* 灯泡 */
+::after,
+::before {
+  box-sizing: border-box
+}
+
+.war_pop {
+  width           : 75rpx;
+  height          : 275rpx;
+  animation       : box-swing 3s infinite ease-in-out;
+  transform-origin: top center;
+  position        : absolute;
+  top             : -10rpx;
+  left            : 40px;
+}
+
+
+.box {
+  z-index      : 10;
+  display      : block;
+  width        : 75rpx;
+  height       : 75rpx;
+  border-radius: 50%;
+  position     : absolute;
+  top          : 200rpx;
+  left         : calc(50% -(75rpx/2));
+  background   : rgb(243, 255, 192);
+  box-shadow   : 5rpx 5rpx 80rpx #cfcace, 5rpx -5rpx 80rpx #e4cedf, -5rpx 5rpx 80rpx #e4cedf, -5rpx -5rpx 80rpx #e4cedf;
+  cursor       : pointer;
+}
+
+.box::before {
+  content                : "";
+  position               : absolute;
+  width                  : 35rpx;
+  height                 : 50rpx;
+  background             : rgb(43, 43, 43);
+  bottom                 : 100%;
+  left                   : calc(50% -(35rpx/2));
+  z-index                : -1;
+  border-top-left-radius : 10rpx;
+  border-top-right-radius: 10rpx
+}
+
+.box::after {
+  content   : "";
+  position  : absolute;
+  width     : 10rpx;
+  height    : 200rpx;
+  background: rgb(49, 49, 49);
+  bottom    : 100%;
+  left      : calc(50% - 5rpx);
+  z-index   : -1
+}
+
+.box .box_view {
+  display   : block;
+  position  : absolute;
+  width     : 2rpx;
+  height    : 30rpx;
+  background: #222;
+  top       : 2rpx;
+  left      : 28rpx;
+  box-shadow: 17rpx 0 #222;
+  opacity   : 1;
+}
+
+.box .box_view::after {
+  content   : "";
+  position  : absolute;
+  bottom    : -2rpx;
+  left      : 4rpx;
+  background: #222;
+  width     : 2rpx;
+  height    : 12rpx;
+  display   : block;
+  box-shadow: 4.5rpx 0 #222, 9rpx 0 #222;
+}
+
+@keyframes box-swing {
+  0% {
+    transform: rotate(-10deg)
+  }
+
+  50% {
+    transform: rotate(10deg)
+  }
+
+  100% {
+    transform: rotate(-10deg)
+  }
+}

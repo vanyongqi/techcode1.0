@@ -1,4 +1,4 @@
-// page/tailswpier/chat_rooms/chat_rooms.js
+// page/topic/utilities/utilities.js
 Page({
 
   /**
