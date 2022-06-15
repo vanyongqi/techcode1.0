@@ -1,2 +1,28 @@
 <!--page/topic/artificial_intelligence/artificial_intelligence.wxml-->
-<text>page/topic/artificial_intelligence/artificial_intelligence.wxml</text>
+<!--pages/another/scroll-x/index.wxml-->
+<!--currentTab < 4 ? 0 : currentTab - 3  保证滑动的时候 有一部分是在一屏内  -->
+<import src="chapter_item/chapter_item"/>
+<view style="margin-top: 70rpx;">
+<scroll-view class="scroll-wrapper" scroll-x scroll-with-animation="true" scroll-into-view="item{{currentTab < 3 ? 0 : currentTab - 1}}">
+	<view class="navigate-item" id="item{{index}}" wx:for="{{tabList}}" wx:key="index" data-index="{{index}}" bindtap="tabNav">
+		<view class="names {{currentTab === index ? 'active' : ''}}">{{item.name}}</view>
+		<view class="currtline {{currentTab === index ? 'active' : ''}}" wx:if="{{currentTab === index}}"></view>
+	</view>
+</scroll-view>
+</view>
+<swiper indicator-dots="{{false}}" bindchange="handleSwiper" current="{{currentTab}}">
+	<block wx:for="{{tabList}}" wx:key="index">
+			<swiper-item style="overflow: scroll;">
+        <view class="tab_title">{{currentTab}}待定～ </view>
+				<scroll-view scroll-y refresher-enabled refresher-background="#F6F7F8" refresher-triggered="{{isRefresh}}"  bindrefresherrefresh="refresherpulling" bindscrolltolower="handleTolower">
+<!--                                   -->
+           <block wx:if="{{currentTab==0}}"wx:for="{{chapterList}}" wx:for-item="item" wx:for-index="idx" wx:key="key">
+                <view  catchtap="onTapToDetail" data-chapter-id="{{item.chapterId}}">
+                    <template is="chapterItemTpl" data="{{...item}}"/>
+                 </view>
+           </block>
+
+				</scroll-view>
+			</swiper-item>
+	</block>
+</swiper>

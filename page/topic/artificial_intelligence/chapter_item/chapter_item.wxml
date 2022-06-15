@@ -1,0 +1,18 @@
+<!--page/topic/artificial_intelligence/chapter_item/chapter_item.wxml-->
+<template name="chapterItemTpl">
+ <view class="infor_box">
+    <view class="department_line"></view>
+      <text class="infor_box_title">{{title}}</text>
+      <text class="infor_box_content">{{content}}</text>
+
+
+      <view class="tail_infor">
+        <text>{{date}}</text>
+        <image src="https://s1.ax1x.com/2022/06/02/XNQDdf.png"/>
+        <text>{{collectionNum}}</text>
+        <image src="https://s1.ax1x.com/2022/06/02/XNQyFS.png"/>
+        <text>{{readingNum}}</text>
+      </view>
+
+  </view>
+ </template>

@@ -1,0 +1,31 @@
+<!--page/topic/artificial_intelligence/chapter_detail/chapter_detail.wxml-->
+
+<view class="box">
+    <scroll-view class="scroll-view-y" scroll-y="{{true}}">
+        <view class="container">
+        <view class="card">
+             <view class="title">   <text class="title">{{chapter.title}}</text></view>
+            <view >{{chapter.content}}</view>
+     <view class="tool">
+  <view class="tool-item" catchtap="onUpTap" data-post-id="{{chapter.chapterId}}">
+      <image animation="{{animationUp}}" wx:if="{{chapter.upStatus}}" src="https://s1.ax1x.com/2022/06/02/XNQyFS.png" />
+      <image animation="{{animationUp}}" wx:else src="https://s1.ax1x.com/2022/06/02/XNQyFS.png" />
+    <text>{{chapter.upNum}}</text>
+  </view>
+  <view class="tool-item" catchtap="onCollectionTap" data-post-id="{{product.productId}}">
+    <image wx:if="{{product.collectionStatus}}" src="https://s1.ax1x.com/2022/06/02/XNQDdf.png" />
+    <image wx:else src="https://s1.ax1x.com/2022/06/02/XNQtRH.png" />
+    <text>{{product.collectionNum}}</text>
+  </view>
+</view>
+
+
+
+  </view>
+ </view>
+ </scroll-view>
+</view>
+
+
+
+

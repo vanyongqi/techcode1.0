@@ -7,13 +7,18 @@
     "page/topic/computer_network/computer_nework",
     "page/topic/operating_system/operating_system",
     "page/topic/block_chain/blockchain",
+
     "page/topic/artificial_intelligence/artificial_intelligence",
+    "page/topic/artificial_intelligence/chapter_detail/chapter_detail",
+    "page/topic/artificial_intelligence/chapter_item/chapter_item",
+
     "page/topic/structure_algorithm/structure_algorithm",
     "page/topic/language_eight_templates/language_eight_templates",
     "page/topic/math/math",
     "page/topic/english/english",
-    "page/topic/utilities/utilities"
+    "page/topic/utilities/utilities",
 
+    "page/admin/admin"
   ],
 
   "lazyCodeLoading": "requiredComponents",

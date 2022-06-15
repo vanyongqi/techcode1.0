@@ -1,1 +1,72 @@
 /* page/topic/artificial_intelligence/artificial_intelligence.wxss */
+/* pages/another/scroll-x/index.wxss */
+@import "chapter_item/chapter_item.wxss";
+.scroll-wrapper {
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(248, 248, 248, 0.233);
+    height: 90rpx;
+    padding: 0 32rpx;
+    box-sizing: border-box;
+    width: 80%;
+  }
+  /* 去掉滚动条 */
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+  }
+  
+  .navigate-item {
+    display: inline-block;
+    text-align: center;
+    height: 90rpx;
+    line-height: 90rpx;
+    margin: 0 30rpx;
+  }
+  
+  .names {
+    font-size: 28rpx;
+    color: #e6e6e6;
+  }
+  
+  .names.active {
+    color: #000000;
+    font-weight: bold;
+    font-size: 34rpx;
+  }
+  
+  .currtline {
+    margin: -8rpx auto 0 auto;
+    width: 100rpx;
+    height: 8rpx;
+    border-radius: 4rpx;
+  }
+  
+  .currtline.active {
+    background: #000000;
+    transition: all .3s;
+  }
+  .tab_title{
+    margin: 20rpx;
+    border: 1px solid #000000;
+    padding: 20rpx;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+  }
+  swiper {
+    min-height: calc(100vh - 100rpx);
+  }
+  .swiper-item {
+    width: 100%;
+    padding: 32rpx ;
+    box-sizing: border-box;
+  }
+  
+  scroll-view {
+    height: calc(100vh - 100rpx);
+  }
+  page{
+    background-color:#ffffffc9;
+    background-image: url(https://c-ssl.dtstatic.com/uploads/item/201707/17/20170717102749_fsn4j.thumb.1000_0.png);
+  }
